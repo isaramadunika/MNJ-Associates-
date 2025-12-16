@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Our Management - Meet the experienced Chartered Accountant directors at MNJ Associates with over 60 years of collective professional experience.">
+    <title>Our Management - MNJ Associates</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'smoke-green': '#2F4F2F',
+                        'smoke-green-light': '#3a6040',
+                        'smoke-green-dark': '#1f3520',
+                        'gold': '#D4AF37',
+                        'gold-light': '#e6c961',
+                        'gold-dark': '#b8942f',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/MNJ.png" alt="MNJ Associates Logo" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Our Services</a>
+                    <a href="management.html" class="nav-link active">Our Management</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" id="mobileMenuBtn">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="nav-menu md:hidden" id="mobileMenu">
+                <a href="index.html" class="nav-link block py-2">Home</a>
+                <a href="about.html" class="nav-link block py-2">About Us</a>
+                <a href="services.html" class="nav-link block py-2">Our Services</a>
+                <a href="management.html" class="nav-link active block py-2">Our Management</a>
+                <a href="contact.html" class="nav-link block py-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-b from-black to-smoke-green-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+                Our <span class="text-gold">Leadership Team</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Distinguished Chartered Accountants with over 60 years of collective professional experience
+            </p>
+        </div>
+    </section>
+
+    <!-- Management Team -->
+    <section class="py-20 gradient-animate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Director 1 -->
+                <div class="team-card text-center">
+                    <div class="mb-6 overflow-hidden rounded-lg mx-auto w-48 h-48">
+                        <img src="assets/images/director1.png" alt="Director" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Mahesh Fernando</h3>
+                    <p class="text-gold font-semibold mb-4">Managing Partner & Director</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-smoke-green px-4 py-2 rounded-full text-sm font-semibold">
+                            FCA, CA Sri Lanka
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-left mb-4">
+                        With over 25 years of experience in audit and assurance, Mahesh specializes in financial
+                        services and corporate governance, leading complex audit engagements for major corporations.
+                    </p>
+                    <div class="border-t border-smoke-green pt-4 text-left">
+                        <h4 class="text-gold font-semibold mb-2">Expertise</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Statutory Audits</li>
+                            <li>• Corporate Restructuring</li>
+                            <li>• IFRS Implementation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Director 2 -->
+                <div class="team-card text-center">
+                    <div class="mb-6 overflow-hidden rounded-lg mx-auto w-48 h-48">
+                        <img src="assets/images/director2.png" alt="Director" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Nimal Jayasinghe</h3>
+                    <p class="text-gold font-semibold mb-4">Senior Partner & Director</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-smoke-green px-4 py-2 rounded-full text-sm font-semibold">
+                            FCA, CA Sri Lanka
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-left mb-4">
+                        Nimal brings 20+ years of expertise in risk management and internal controls, having worked with
+                        leading multinational corporations and financial institutions across Sri Lanka.
+                    </p>
+                    <div class="border-t border-smoke-green pt-4 text-left">
+                        <h4 class="text-gold font-semibold mb-2">Expertise</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Risk Assessment</li>
+                            <li>• Internal Audit</li>
+                            <li>• Compliance Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Director 3 -->
+                <div class="team-card text-center">
+                    <div
+                        class="mb-6 overflow-hidden rounded-lg mx-auto w-48 h-48 bg-gradient-to-br from-smoke-green-dark to-smoke-green flex items-center justify-center">
+                        <svg class="w-24 h-24 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Jayantha Perera</h3>
+                    <p class="text-gold font-semibold mb-4">Partner & Director</p>
+                    <div class="mb-4">
+                        <span class="inline-block bg-smoke-green px-4 py-2 rounded-full text-sm font-semibold">
+                            ACA, CA Sri Lanka
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-left mb-4">
+                        Jayantha has 15+ years of experience in financial reporting and regulatory compliance, with
+                        specialized knowledge in manufacturing and trading sectors.
+                    </p>
+                    <div class="border-t border-smoke-green pt-4 text-left">
+                        <h4 class="text-gold font-semibold mb-2">Expertise</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Financial Reporting</li>
+                            <li>• Tax Advisory</li>
+                            <li>• Business Valuation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Highlights -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading inline-block mb-4">Collective Expertise</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Our directors bring diverse experience across multiple industries and specializations
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 border border-smoke-green rounded-lg">
+                    <div class="text-gold text-4xl font-bold mb-2">60+</div>
+                    <p class="text-gray-400">Years Combined Experience</p>
+                </div>
+
+                <div class="text-center p-6 border border-smoke-green rounded-lg">
+                    <div class="text-gold text-4xl font-bold mb-2">500+</div>
+                    <p class="text-gray-400">Client Engagements</p>
+                </div>
+
+                <div class="text-center p-6 border border-smoke-green rounded-lg">
+                    <div class="text-gold text-4xl font-bold mb-2">15+</div>
+                    <p class="text-gray-400">Industry Sectors</p>
+                </div>
+
+                <div class="text-center p-6 border border-smoke-green rounded-lg">
+                    <div class="text-gold text-4xl font-bold mb-2">100%</div>
+                    <p class="text-gray-400">Professional Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Qualifications -->
+    <section class="py-20 bg-gradient-to-b from-smoke-green-dark to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading inline-block mb-4">Professional Excellence</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Chartered Accountants</h3>
+                    <p class="text-gray-400">
+                        All our directors are qualified Chartered Accountants (CA Sri Lanka) with extensive professional
+                        credentials
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Continuous Learning</h3>
+                    <p class="text-gray-400">
+                        Regular professional development ensures our team stays current with evolving standards and best
+                        practices
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="text-gold text-5xl mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Global Standards</h3>
+                    <p class="text-gray-400">
+                        Expertise in international accounting and auditing standards, including IFRS and ISA
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="assets/images/MNJ.png" alt="MNJ Associates Logo" class="h-16 w-auto">
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        A subsidiary of Foresight, specializing in Audit and Assurance services. Empowering Sri Lankan
+                        enterprises through professional excellence.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-gold transition-colors">About Us</a>
+                        </li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-gold transition-colors">Services</a>
+                        </li>
+                        <li><a href="management.html"
+                                class="text-gray-400 hover:text-gold transition-colors">Management</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gold transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Colombo, Sri Lanka</li>
+                        <li>info@mnjassociates.lk</li>
+                        <li>+94 11 XXX XXXX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MNJ Associates. All rights reserved. A subsidiary of Foresight.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

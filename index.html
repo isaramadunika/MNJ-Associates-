@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MNJ Associates - Premier Audit & Assurance firm, a subsidiary of Foresight, empowering Sri Lankan enterprises through best practices and professional excellence.">
+    <title>MNJ Associates - Audit & Assurance Excellence</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'smoke-green': '#2F4F2F',
+                        'smoke-green-light': '#3a6040',
+                        'smoke-green-dark': '#1f3520',
+                        'gold': '#D4AF37',
+                        'gold-light': '#e6c961',
+                        'gold-dark': '#b8942f',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/images/MNJ.png" alt="MNJ Associates Logo" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="services.html" class="nav-link">Our Services</a>
+                    <a href="management.html" class="nav-link">Our Management</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" id="mobileMenuBtn">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="nav-menu md:hidden" id="mobileMenu">
+                <a href="index.html" class="nav-link active block py-2">Home</a>
+                <a href="about.html" class="nav-link block py-2">About Us</a>
+                <a href="services.html" class="nav-link block py-2">Our Services</a>
+                <a href="management.html" class="nav-link block py-2">Our Management</a>
+                <a href="contact.html" class="nav-link block py-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section class="hero-overlay">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="hero-bg-video">
+            <source src="assets/video/home page .mp4" type="video/mp4">
+        </video>
+
+        <!-- Hero Content -->
+        <div class="hero-content flex items-center justify-center h-full">
+            <div class="text-center max-w-4xl px-4">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up"
+                    style="font-family: 'Playfair Display', serif;">
+                    Excellence in <span class="text-gold">Audit & Assurance</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300 fade-in-up delay-100">
+                    Empowering Sri Lankan enterprises to reach their full potential through best practices and foresight
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up delay-200">
+                    <a href="contact.html" class="btn-primary inline-block">Contact Us</a>
+                    <a href="services.html" class="btn-secondary inline-block">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-smoke-green-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="section-heading mb-6">Who We Are</h2>
+                    <div class="gold-accent">
+                        <p class="text-lg text-gray-300 mb-4">
+                            MNJ Associates is a subsidiary of Foresight, specializing in comprehensive Audit and
+                            Assurance services.
+                        </p>
+                        <p class="text-lg text-gray-300 mb-4">
+                            Our three directors are Chartered Accountants with over 60 years of collective professional
+                            experience, ensuring the highest standards of service delivery.
+                        </p>
+                        <p class="text-lg text-gray-300 mb-6">
+                            We adhere strictly to best practices, ensuring long-term business sustainability and success
+                            for our clients.
+                        </p>
+                        <a href="about.html"
+                            class="text-gold hover:text-gold-light font-semibold inline-flex items-center transition-colors">
+                            Learn More About Us
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-overlay">
+                    <img src="assets/images/audit-team.png" alt="Professional Audit Team"
+                        class="rounded-lg w-full shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 gradient-animate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading inline-block mb-4">Our Core Services</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Comprehensive audit and assurance solutions tailored to your business needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="text-gold text-4xl mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Audit & Assurance</h3>
+                    <p class="text-gray-400">
+                        Independent verification and validation of financial statements with the highest professional
+                        standards.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="text-gold text-4xl mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Financial Reporting</h3>
+                    <p class="text-gray-400">
+                        Accurate and compliant financial reporting solutions that meet regulatory requirements.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="text-gold text-4xl mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Compliance & Governance</h3>
+                    <p class="text-gray-400">
+                        Ensuring your organization adheres to all regulatory and governance frameworks.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="text-gold text-4xl mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Risk Assessment</h3>
+                    <p class="text-gray-400">
+                        Comprehensive risk evaluation and mitigation strategies for sustainable growth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-heading inline-block mb-4">Why Choose MNJ Associates</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8">
+                    <div class="text-gold text-5xl font-bold mb-4">60+</div>
+                    <h3 class="text-xl font-semibold mb-2">Years of Experience</h3>
+                    <p class="text-gray-400">Collective professional expertise from our Chartered Accountant directors
+                    </p>
+                </div>
+
+                <div class="text-center p-8">
+                    <div class="text-gold text-5xl font-bold mb-4">100%</div>
+                    <h3 class="text-xl font-semibold mb-2">Best Practices</h3>
+                    <p class="text-gray-400">Strict adherence to international auditing and assurance standards</p>
+                </div>
+
+                <div class="text-center p-8">
+                    <div class="text-gold text-5xl font-bold mb-4">∞</div>
+                    <h3 class="text-xl font-semibold mb-2">Long-term Success</h3>
+                    <p class="text-gray-400">Committed to ensuring sustainable business growth for our clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-smoke-green-dark to-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
+                Ready to Elevate Your Business?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Partner with MNJ Associates for professional audit and assurance services that drive success
+            </p>
+            <a href="contact.html" class="btn-primary text-lg px-10 py-4">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="mb-4">
+                        <img src="assets/images/MNJ.png" alt="MNJ Associates Logo" class="h-16 w-auto">
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        A subsidiary of Foresight, specializing in Audit and Assurance services. Empowering Sri Lankan
+                        enterprises through professional excellence.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-gold transition-colors">About Us</a>
+                        </li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-gold transition-colors">Services</a>
+                        </li>
+                        <li><a href="management.html"
+                                class="text-gray-400 hover:text-gold transition-colors">Management</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gold transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Colombo, Sri Lanka</li>
+                        <li>info@mnjassociates.lk</li>
+                        <li>+94 11 XXX XXXX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 MNJ Associates. All rights reserved. A subsidiary of Foresight.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
